@@ -39,21 +39,29 @@
     </style>
 </head>
 <body>
-    <div id="content"></div>
+    <div id="content">Loading...</div>
 
+    <!-- Include marked.js library -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        // Fetch the README.md file
-        fetch('README.md')
-            .then(response => response.text())
-            .then(markdown => {
-                // Convert Markdown to HTML using marked.js
-                document.getElementById('content').innerHTML = marked(markdown);
-            })
-            .catch(error => {
-                console.error('Error loading README.md:', error);
-                document.getElementById('content').innerHTML = "<p>Error loading content.</p>";
-            });
+        document.addEventListener("DOMContentLoaded", () => {
+            // Fetch the README.md file
+            fetch('README.md')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.text();
+                })
+                .then(markdown => {
+                    // Convert Markdown to HTML using marked.js
+                    document.getElementById('content').innerHTML = marked.parse(markdown);
+                })
+                .catch(error => {
+                    console.error('Error loading README.md:', error);
+                    document.getElementById('content').innerHTML = "<p>Error loading content. Please check the console for details.</p>";
+                });
+        });
     </script>
 </body>
 </html>

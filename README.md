@@ -42,9 +42,9 @@ Teamwork energizes me, and I focus on collaboration and shared success over comp
 
 ## Meetings
 
-My calendar is current, and I’m typically available for meetings from 8 a.m. to 7 p.m. CET (2 a.m. to 1 p.m. ET). I can adjust for customer-facing meetings outside these hours when necessary.
+My calendar is always current, and I’m typically available for meetings from 8 a.m. to 7 p.m. CET (2 a.m. to 1 p.m. ET). I can adjust for customer-facing meetings outside these hours when necessary.
 
-Written action items or summaries after meetings help me stay aligned.
+Written action items or summaries after meetings really help me stay aligned.
 
 ## Time management
 
@@ -52,19 +52,12 @@ I rely on timers, checklists, and breaking tasks into manageable steps. Early de
 
 # How to give me feedback
 
-I appreciate direct, constructive feedback. If you see areas for improvement, let me know—I’m eager to grow.
+I value direct, constructive input. Point out areas for improvement—I’m here to grow.
 
-## Be Specific
+- **Be specific:** Use clear examples (e.g., “I noticed X during Y”) to make feedback actionable.
+- **Be timely:** Share feedback soon after an event to keep it relevant and effective.
 
-General feedback isn’t as actionable. Clear examples (e.g., “I noticed X during Y”) help me understand and improve.
-
-## Be Timely
-
-Feedback is most helpful when it’s fresh. Share it soon after an event or observation for better context and actionability.
-
-## How I respond to feedback 
-
-I’ll reflect and make changes where possible, and welcome follow-ups to track progress.
+I’ll reflect, adapt, and welcome follow-ups to track progress.
 
 ---
 

@@ -1,4 +1,4 @@
->This is a “personal README”, to help communicate to the wider team how I work best and when/where I may need some support.
+>This “personal README” explains how I work best and highlights areas where I might need support.
 
 # Leverage my strengths
 

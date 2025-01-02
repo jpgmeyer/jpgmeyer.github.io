@@ -36,6 +36,8 @@ I appreciate clear, straightforward communication. Subtle cues or indirect feedb
 
 When messaging (e.g., on Slack), stating the request upfront helps me respond promptly.
 
+I prefer written communication over voice memos or unscheduled calls. For discussions, scheduling a call in advance helps me prepare and contribute effectively.
+
 ## Collaboration
 
 Teamwork energizes me, and I focus on collaboration and shared success over competition. If you’re stuck, I’d love to help think things through.

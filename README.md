@@ -54,6 +54,18 @@ I rely on timers, checklists, and breaking tasks into manageable steps. Early de
 
 I appreciate direct, constructive feedback. If you see areas for improvement, let me know—I’m eager to grow.
 
+## Be Specific
+
+General feedback isn’t as actionable. Clear examples (e.g., “I noticed X during Y”) help me understand and improve.
+
+## Be Timely
+
+Feedback is most helpful when it’s fresh. Share it soon after an event or observation for better context and actionability.
+
+## How I respond to feedback 
+
+I’ll reflect and make changes where possible, and welcome follow-ups to track progress.
+
 ---
 
 Thanks for taking the time to understand how I work!

@@ -93,12 +93,13 @@
                     if (!response.ok) {
                         throw new Error(`HTTP error! Status: ${response.status}`);
                     }
-                    // Get the Last-Modified header
+                    // Retrieve the Last-Modified header
                     const lastModified = response.headers.get('Last-Modified');
                     if (lastModified) {
-                        // Convert to UTC date and set it in the footer
-                        const utcDate = new Date(lastModified).toISOString().replace('T', ' ').replace('Z', '');
-                        document.getElementById('lastUpdated').textContent = utcDate;
+                        // Parse and format the Last-Modified date
+                        const lastModifiedDate = new Date(lastModified);
+                        const formattedDate = lastModifiedDate.toISOString().split('.')[0].replace('T', ' ');
+                        document.getElementById('lastUpdated').textContent = formattedDate;
                     } else {
                         document.getElementById('lastUpdated').textContent = "Unknown";
                     }

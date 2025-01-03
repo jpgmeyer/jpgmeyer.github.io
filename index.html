@@ -69,10 +69,20 @@
         a:hover {
             text-decoration: underline;
         }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #6a737d;
+        }
     </style>
 </head>
 <body>
     <div class="container" id="content">Loading...</div>
+
+    <footer id="footer">
+        Last updated on <span id="lastUpdated"></span>
+    </footer>
 
     <!-- Include marked.js library -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -93,6 +103,11 @@
                     console.error('Error loading README.md:', error);
                     document.getElementById('content').innerHTML = "<p>Error loading content. Please check the console for details.</p>";
                 });
+
+            // Set last updated date and time
+            const now = new Date();
+            const utcDate = now.toUTCString();
+            document.getElementById('lastUpdated').textContent = utcDate;
         });
     </script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "310fbee15ccb4dedb03360e72f26e3fc"}'></script><!-- End Cloudflare Web Analytics -->

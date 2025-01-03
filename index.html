@@ -81,7 +81,7 @@
     <div class="container" id="content">Loading...</div>
 
     <footer id="footer">
-        Last updated on <span id="lastUpdated"></span>
+        Last updated on <span id="lastUpdated"></span> (UTC)
     </footer>
 
     <!-- Include marked.js library -->
@@ -93,6 +93,15 @@
                     if (!response.ok) {
                         throw new Error(`HTTP error! Status: ${response.status}`);
                     }
+                    // Get the Last-Modified header
+                    const lastModified = response.headers.get('Last-Modified');
+                    if (lastModified) {
+                        // Convert to UTC date and set it in the footer
+                        const utcDate = new Date(lastModified).toISOString().replace('T', ' ').replace('Z', '');
+                        document.getElementById('lastUpdated').textContent = utcDate;
+                    } else {
+                        document.getElementById('lastUpdated').textContent = "Unknown";
+                    }
                     return response.text();
                 })
                 .then(markdown => {
@@ -103,11 +112,6 @@
                     console.error('Error loading README.md:', error);
                     document.getElementById('content').innerHTML = "<p>Error loading content. Please check the console for details.</p>";
                 });
-
-            // Set last updated date and time
-            const now = new Date();
-            const utcDate = now.toUTCString();
-            document.getElementById('lastUpdated').textContent = utcDate;
         });
     </script>
     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "310fbee15ccb4dedb03360e72f26e3fc"}'></script><!-- End Cloudflare Web Analytics -->

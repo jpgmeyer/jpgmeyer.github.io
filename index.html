@@ -69,39 +69,19 @@
         a:hover {
             text-decoration: underline;
         }
-        footer {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #6a737d;
-        }
     </style>
 </head>
 <body>
     <div class="container" id="content">Loading...</div>
 
-    <footer id="footer">
-        Last updated on <span id="lastUpdated"></span> (UTC)
-    </footer>
-
-    <!-- Include marked.js library -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Include marked.js library locally -->
+    <script src="./path-to-your-local-marked.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             fetch('README.md')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`HTTP error! Status: ${response.status}`);
-                    }
-                    // Retrieve the Last-Modified header
-                    const lastModified = response.headers.get('Last-Modified');
-                    if (lastModified) {
-                        // Parse and format the Last-Modified date
-                        const lastModifiedDate = new Date(lastModified);
-                        const formattedDate = lastModifiedDate.toISOString().split('.')[0].replace('T', ' ');
-                        document.getElementById('lastUpdated').textContent = formattedDate;
-                    } else {
-                        document.getElementById('lastUpdated').textContent = "Unknown";
                     }
                     return response.text();
                 })
@@ -115,6 +95,5 @@
                 });
         });
     </script>
-    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "310fbee15ccb4dedb03360e72f26e3fc"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

@@ -46,7 +46,7 @@ Teamwork energizes me, and I focus on collaboration and shared success over comp
 
 My calendar is always current, and I’m typically available for meetings from 8 a.m. to 7 p.m. CET (2 a.m. to 1 p.m. ET). I can adjust for customer-facing meetings outside these hours when necessary.
 
-Written action items or summaries after meetings really help me stay aligned.
+Action items or summaries in writing after meetings help me stay organized and aligned.
 
 ## Time management
 

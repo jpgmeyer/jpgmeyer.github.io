@@ -69,10 +69,21 @@
         a:hover {
             text-decoration: underline;
         }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #6a737d;
+        }
     </style>
 </head>
 <body>
     <div class="container" id="content">Loading...</div>
+
+    <!-- Footer showing last build time -->
+    <footer>
+        Site last built on {{ site.time | date: "%Y-%m-%d %H:%M:%S UTC" }}
+    </footer>
 
     <!-- Include marked.js library locally -->
     <script src="marked.min.js"></script>
@@ -96,7 +107,4 @@
         });
     </script>
 </body>
-<footer style="text-align: center; margin-top: 20px; font-size: 0.9em; color: #6a737d;">
-Site last built on {{ site.time | date: "%Y-%m-%d %H:%M:%S UTC" }}
-</footer>
 </html>

@@ -8,3 +8,4 @@ github:
   owner_url: https://github.com/jpgmeyer
 plugins:
   - jekyll-seo-tag
+  - jekyll-remote-theme
